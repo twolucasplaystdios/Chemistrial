@@ -1,0 +1,12 @@
+{
+	"pack": {
+		"description": "A take on a fancier Minecraft typeface",
+		"pack_format": 15,
+		"supported_formats": [
+			15,
+			1024
+		],
+		"min_format": 15,
+		"max_format": 1024
+	}
+}
