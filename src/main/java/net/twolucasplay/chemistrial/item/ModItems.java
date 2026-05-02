@@ -32,7 +32,7 @@ public class ModItems {
             .tag(createCommonItemTag("ingots/uranium"))
             .tab(CHEMICALS_ITEMS_TAB)
             .properties(p -> p.stacksTo(64))
-            .register();
+            .register(); // Fix texture
 
     public static final ItemEntry<Item> POTASSIUM_INGOT = REGISTRATE.item("potassium_ingot", Item::new)
             .tag(Tags.Items.INGOTS)
