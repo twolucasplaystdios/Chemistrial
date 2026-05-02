@@ -24,8 +24,6 @@ public class ModItems {
                 ResourceLocation.fromNamespaceAndPath("t", path));
     }
 
-//    public static final ItemEntry<Item> MERCURY_II_SULFIDE = taggedIngredient("mercury_ii_sulfide", Tags.Items.DUSTS);
-
 
     public static final ItemEntry<Item> URANIUM_INGOT = REGISTRATE.item("uranium_ingot", Item::new)
             .tag(Tags.Items.INGOTS)
