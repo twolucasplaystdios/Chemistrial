@@ -21,6 +21,7 @@ import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
 import net.twolucasplay.chemistrial.base.ModRegistrate;
+import net.twolucasplay.chemistrial.blocks.ModBlocks;
 import net.twolucasplay.chemistrial.datagen.ModDatagen;
 import net.twolucasplay.chemistrial.tabs.ModCreativeModeTabs;
 import net.twolucasplay.chemistrial.item.ModItems;
@@ -50,6 +51,7 @@ public class Chemistrial {
         ModCreativeModeTabs.register();
         REGISTRATE.registerEventListeners(modEventBus);
 
+        ModBlocks.register();
         ModItems.register();
 
         modEventBus.addListener(EventPriority.HIGHEST, ModDatagen::gatherDataHighPriority);
