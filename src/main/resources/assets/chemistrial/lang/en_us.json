@@ -37,5 +37,7 @@
   "item.chemistrial.glucose": "Glucose",
 
 
-  "item.chemistrial.potassium_ingot": "Potassium Ingot"
+  "item.chemistrial.potassium_ingot": "Potassium Ingot",
+
+  "block.chemistrial.cinnabar": "Cinnabar"
 }

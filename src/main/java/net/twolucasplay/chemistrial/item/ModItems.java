@@ -1,5 +1,6 @@
 package net.twolucasplay.chemistrial.item;
 
+import com.cosmads.chemica.Chemica;
 import com.tterrag.registrate.util.entry.ItemEntry;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
@@ -61,6 +62,6 @@ public class ModItems {
             .register();
 
     public static void register() {
-        // 只為了觸發 class loading
+        Chemistrial.LOGGER.info("Registering blocks for {}", "Chemistrial");
     }
 }

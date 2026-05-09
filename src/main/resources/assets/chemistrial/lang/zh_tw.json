@@ -32,5 +32,8 @@
   "item.chemistrial.uranium_ingot.tooltip.behaviour1": "不穩定",
 
 
-  "item.chemistrial.potassium_ingot": "鉀錠"
+  "item.chemistrial.potassium_ingot": "鉀錠",
+
+  "block.chemistrial.cinnabar": "硃砂",
+  "item.chemistrial.glucose": "Glucose"
 }
