@@ -154,13 +154,26 @@ sourceSets.main.resources.srcDir generateModMetadata
 neoForge.ideSyncTask generateModMetadata
 
 // Example configuration to allow publishing using the maven-publish plugin
-publishing {
+publishing  {
     publications {
         mavenJava(MavenPublication) {
             from components.java
         }
     }
+    repositories {
+        maven {
+            url = uri("https://github.com")
+            credentials {
+                username = System.getenv("GITHUB_ACTOR") ?: project.findProperty("gpr.user") as String
+                password = System.getenv("GITHUB_TOKEN") ?: project.findProperty("gpr.key") as String
+            }
+        }
+
+    }
 }
+
+
+
 
 // IDEA no longer automatically downloads sources/javadoc jars for dependencies, so we need to explicitly enable the behavior.
 idea {
