@@ -3,7 +3,8 @@
   "package": "net.twolucasplay.chemistrial.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
-    "TFMGTextsMixin"
+    "TFMGTextsMixin",
+    "WaterColorMixin"
   ],
   "client": [],
   "injectors": {

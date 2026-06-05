@@ -1,7 +1,6 @@
 package net.twolucasplay.chemistrial;
 
 import com.mojang.logging.LogUtils;
-import com.simibubi.create.AllBlocks;
 import com.simibubi.create.foundation.item.ItemDescription;
 import com.simibubi.create.foundation.item.KineticStats;
 import com.simibubi.create.foundation.item.TooltipModifier;
@@ -10,7 +9,6 @@ import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.BlockTypes;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.neoforged.api.distmarker.Dist;
@@ -110,6 +108,7 @@ public class Chemistrial {
                 overrideBlastResistance(b, newResistance);
 
             }
+
         });
     }
 

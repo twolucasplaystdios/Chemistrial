@@ -1,6 +1,6 @@
 plugins {
     id 'java-library'
-    id 'maven-publish'
+    id 'com.github.breadmoirai.github-release' version '2.5.2'
     id 'idea'
     id 'net.neoforged.moddev' version '2.0.140'
 }
@@ -140,7 +140,9 @@ var generateModMetadata = tasks.register("generateModMetadata", ProcessResources
                              mod_license            : mod_license,
                              mod_version            : mod_version,
                              mod_authors            : mod_authors,
-                             mod_description        : mod_description]
+                             mod_description        : mod_description,
+                             mod_update_title       : mod_update_title
+    ]
     inputs.properties replaceProperties
     expand replaceProperties
     from "src/main/templates"
@@ -154,22 +156,23 @@ sourceSets.main.resources.srcDir generateModMetadata
 neoForge.ideSyncTask generateModMetadata
 
 // Example configuration to allow publishing using the maven-publish plugin
-publishing  {
-    publications {
-        mavenJava(MavenPublication) {
-            from components.java
-        }
-    }
-    repositories {
-        maven {
-            url = uri("https://github.com")
-            credentials {
-                username = System.getenv("GITHUB_ACTOR") ?: project.findProperty("gpr.user") as String
-                password = System.getenv("GITHUB_TOKEN") ?: project.findProperty("gpr.key") as String
-            }
-        }
+githubRelease {
+    // Read the GitHub token from environment variables for security
+    token = System.getenv("GITHUB_TOKEN") ?: ""
+    println "Token : ${System.getenv("GITHUB_TOKEN") != null}"
+    targetCommitish = "master-1.21.1"
+    owner = "twolucasplaystdios"
+    repo = "Chemistrial"
+    tagName = "v${project.version}"
+    releaseName = "Chemistrial v${project.version} \"${project.mod_update_title}\" (Minecraft ${project.minecraft_version})"
 
-    }
+    // Automatically generate the changelog based on GitHub commits
+    generateReleaseNotes = true
+
+    // Targets the production mod jar built by the NeoForge plugin
+    // (Usually 'jar' or 'remapJar' depending on your toolchain setup)
+    releaseAssets = [tasks.jar.archiveFile.get()]
+
 }
 
 
