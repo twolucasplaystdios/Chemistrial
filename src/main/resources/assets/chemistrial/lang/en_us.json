@@ -1,0 +1,52 @@
+{
+  "taiwan.is.a.country": "Taiwan is a country.",
+
+  "itemGroup.chemistrial": "Example Mod Tab",
+  "creativetab.chemistrialmod.chemicals": "Chemicals",
+  "block.chemistrial.example_block": "Example Block",
+  "item.chemistrial.example_item": "Example Item",
+  "item.chemistrial.sulfur": "Sulfur",
+  "block.chemistrial.block_of_sulfur": "Block Of Sulfur",
+  "tooltip.chemistrial.sulfur.mass": "Mass: 32.06 g/mol",
+  "tooltip.chemistrial.sulfur.symbol": "Symbol: S",
+  "item.chemistrial.zinc_ingot": "Zinc Ingot",
+  "tooltip.chemistrial.zinc.mass": "Mass: 65.38 g/mol",
+  "tooltip.chemistrial.zinc.symbol": "Symbol: Zn",
+  "tooltip.chemistrial.iron.mass": "Mass: 55.84 g/mol",
+  "tooltip.chemistrial.iron.symbol": "Symbol: Fe",
+  "tooltip.chemistrial.copper.mass": "Mass: 63.55 g/mol",
+  "tooltip.chemistrial.copper.symbol": "Symbol: Cu",
+  "tooltip.chemistrial.gold.mass": "Mass: 196.97 g/mol",
+  "tooltip.chemistrial.gold.symbol": "Symbol: Au",
+
+  "item.chemistrial.mercury_ii_sulfide": "Mercury(II) Sulfide",
+  "item.chemistrial.mercury_ii_sulfide.tooltip.summary": "A stable red or black mineral.",
+  "item.chemistrial.mercury_ii_sulfide.tooltip.condition1": "Stability:",
+  "item.chemistrial.mercury_ii_sulfide.tooltip.behaviour1": "Highly stable compound",
+  "item.chemistrial.mercury_ii_sulfide.tooltip.condition2": "Formula:",
+  "item.chemistrial.mercury_ii_sulfide.tooltip.behaviour2": "HgS",
+  "item.chemistrial.mercury_ii_sulfide.tooltip.condition3": "Mass:",
+  "item.chemistrial.mercury_ii_sulfide.tooltip.behaviour3": "232.66 g/mol",
+
+  "item.chemistrial.uranium_ingot": "Uranium Ingot",
+  "item.chemistrial.uranium_ingot.tooltip.summary": "A silvery-grey metal in the actinide series of the periodic table.",
+
+  "item.chemistrial.uranium_ingot.tooltip.condition1": "Stability:",
+  "item.chemistrial.uranium_ingot.tooltip.behaviour1": "Unstable",
+
+  "item.chemistrial.glucose": "Glucose",
+  "item.chemistrial.glucose.tooltip.summary": "能量主要來源",
+  "item.chemistrial.glucose.tooltip.condition1": "Stability",
+  "item.chemistrial.glucose.tooltip.behaviour1": "Highly stable compound",
+  "item.chemistrial.glucose.tooltip.condition2": "Formula:",
+  "item.chemistrial.glucose.tooltip.behaviour2": "C₆H₁₂O₆",
+
+
+  "item.chemistrial.potassium_ingot": "Potassium Ingot",
+
+  "block.chemistrial.cinnabar": "Cinnabar",
+
+  "item.minecraft.iron_ingot.tooltip.summary": "金屬元素，銀白色，在潮濕空氣中容易氧化生成紅褐色的氧化鐵。",
+  "item.minecraft.copper_ingot.tooltip.summary": "金屬元素，紅銅色。"
+
+}

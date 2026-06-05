@@ -1,0 +1,48 @@
+{
+  "taiwan.is.a.country": "台灣是一個國家",
+  "itemGroup.chemistrial": "Example Mod Tab",
+  "creativetab.chemistrialmod.chemicals": "化學試劑",
+  "block.chemistrial.example_block": "Example Block",
+  "item.chemistrial.example_item": "Example Item",
+  "item.chemistrial.sulfur": "硫",
+  "block.chemistrial.block_of_sulfur": "硫方塊",
+  "tooltip.chemistrial.sulfur.mass": "質量: 32.06 g/mol",
+  "tooltip.chemistrial.sulfur.symbol": "符號: S",
+  "item.chemistrial.zinc_ingot": "鋅錠",
+  "tooltip.chemistrial.zinc.mass": "質量: 65.38 g/mol",
+  "tooltip.chemistrial.zinc.symbol":  "符號: Zn",
+  "tooltip.chemistrial.iron.mass": "質量: 55.84 g/mol",
+  "tooltip.chemistrial.iron.symbol": "符號: Fe",
+  "tooltip.chemistrial.copper.mass": "質量: 63.55 g/mol",
+  "tooltip.chemistrial.copper.symbol": "符號: Cu",
+  "tooltip.chemistrial.gold.mass": "質量: 196.97 g/mol",
+  "tooltip.chemistrial.gold.symbol": "符號: Au",
+  "item.chemistrial.mercury_ii_sulfide": "硫化汞",
+  "item.chemistrial.mercury_ii_sulfide.tooltip.summary": "一種穩定的紅色或黑色礦物，用作精煉汞的主要礦石。",
+  "item.chemistrial.mercury_ii_sulfide.tooltip.condition1": "穩定性",
+  "item.chemistrial.mercury_ii_sulfide.tooltip.behaviour1": "極穩定",
+  "item.chemistrial.mercury_ii_sulfide.tooltip.condition2": "化學式:",
+  "item.chemistrial.mercury_ii_sulfide.tooltip.behaviour2": "HgS",
+  "item.chemistrial.mercury_ii_sulfide.tooltip.condition3": "質量:",
+  "item.chemistrial.mercury_ii_sulfide.tooltip.behaviour3": "232.66 g/mol",
+
+  "item.chemistrial.uranium_ingot": "鈾錠",
+  "item.chemistrial.uranium_ingot.tooltip.summary": "錒系元素之一，為銀灰色金屬，常被用於核能發電以及生產核武器。",
+  "item.chemistrial.uranium_ingot.tooltip.condition1": "穩定性:",
+  "item.chemistrial.uranium_ingot.tooltip.behaviour1": "不穩定",
+
+
+  "item.chemistrial.potassium_ingot": "鉀錠",
+
+  "block.chemistrial.cinnabar": "硃砂",
+
+  "item.chemistrial.glucose": "葡萄糖",
+  "item.chemistrial.glucose.tooltip.summary": "能量主要來源",
+  "item.chemistrial.glucose.tooltip.condition1": "穩定性",
+  "item.chemistrial.glucose.tooltip.behaviour1": "極穩定",
+  "item.chemistrial.glucose.tooltip.condition2": "化學式:",
+  "item.chemistrial.glucose.tooltip.behaviour2": "C₆H₁₂O₆",
+
+  "item.minecraft.iron_ingot.tooltip.summary": "金屬元素，銀白色，在潮濕空氣中容易氧化生成紅褐色的氧化鐵。",
+  "item.minecraft.copper_ingot.tooltip.summary": "金屬元素，紅銅色。"
+}
