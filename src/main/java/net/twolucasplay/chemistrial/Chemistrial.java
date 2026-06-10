@@ -1,16 +1,20 @@
 package net.twolucasplay.chemistrial;
 
+import com.cosmads.chemica.registry.ChemicaFluids;
 import com.mojang.logging.LogUtils;
 import com.simibubi.create.foundation.item.ItemDescription;
 import com.simibubi.create.foundation.item.KineticStats;
 import com.simibubi.create.foundation.item.TooltipModifier;
 import net.createmod.catnip.lang.FontHelper;
+import net.minecraft.client.renderer.ItemBlockRenderTypes;
+import net.minecraft.client.renderer.RenderType;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.material.Fluid;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.EventPriority;
 import net.neoforged.bus.api.IEventBus;
@@ -25,7 +29,6 @@ import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
 import net.twolucasplay.chemistrial.base.ModRegistrate;
 import net.twolucasplay.chemistrial.blocks.ModBlocks;
-import net.twolucasplay.chemistrial.datagen.ModDatagen;
 import net.twolucasplay.chemistrial.tabs.ModCreativeModeTabs;
 import net.twolucasplay.chemistrial.item.ModItems;
 
@@ -60,8 +63,8 @@ public class Chemistrial {
         ModBlocks.register();
         ModItems.register();
 
-        modEventBus.addListener(EventPriority.HIGHEST, ModDatagen::gatherDataHighPriority);
-        modEventBus.addListener(EventPriority.LOWEST, ModDatagen::gatherData);
+//        modEventBus.addListener(EventPriority.HIGHEST, ModDatagen::gatherDataHighPriority);
+//        modEventBus.addListener(EventPriority.LOWEST, ModDatagen::gatherData);
     //        modEventBus.addListener(ModCreativeModeTabs::addCreative);
 
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
@@ -82,25 +85,25 @@ public class Chemistrial {
                 float finalScale = DURABILITY_SCALE.get();
 
                 if (blockId.contains("iron")) {
-                    finalScale *= 8.0f;       // 鋼鐵：結構與防爆之王
+                    finalScale *= 8.0f;
                 } else if (blockId.contains("brass")) {
-                    finalScale *= 4.5f;       // 黃銅：高強度、抗火藥衝擊（彈殼材料）
+                    finalScale *= 4.5f;
                 } else if (blockId.contains("netherite")) {
-                    finalScale *= 1.5f;       // 獄髓（鉑合金）：極高密度，但因原版基礎值太高，1.5x 已是神級
+                    finalScale *= 1.5f;
                 } else if (blockId.contains("gold")) {
-                    finalScale *= 0.8f;       // 黃金：極軟，易凹陷變形
+                    finalScale *= 0.8f;
                 } else if (blockId.contains("zinc")) {
-                    finalScale *= 0.6f;       // 鋅塊：清脆、強度低、震波下極易碎裂
+                    finalScale *= 0.6f;
                 } else if (blockId.contains("copper")) {
-                    finalScale *= 1.2f;       // 純銅：有延展性但太軟，防爆力略高於原版一點
+                    finalScale *= 1.2f;
                 } else if (blockId.contains("diamond")) {
-                    finalScale *= 0.2f;       // 鑽石：極硬但極脆，震波下瞬間被震碎
+                    finalScale *= 0.2f;
                 } else if (blockId.contains("aluminum") || blockId.contains("bauxite")) {
-                    finalScale = 1.8f;       // 鋁/鋁土：具延展性但強度低，會嚴重凹陷變形
+                    finalScale = 1.8f;
                 } else if (blockId.contains("andesite_alloy")) {
-                    finalScale *= 0.5f;       // 安山合金：脆性複合材料，易碎
+                    finalScale *= 0.5f;
                 } else {
-                    finalScale *= 1.0f;       // 其餘常規方塊保持你設定的基礎 scale
+                    finalScale *= 1.0f;
                 }
 
                 // 計算新抗性並直接覆蓋
@@ -135,6 +138,7 @@ public class Chemistrial {
                 TooltipModifier.REGISTRY.register(Items.IRON_INGOT,
                         new ItemDescription.Modifier(Items.IRON_INGOT, FontHelper.Palette.STANDARD_CREATE)
                 );
+
             });
         }
     }

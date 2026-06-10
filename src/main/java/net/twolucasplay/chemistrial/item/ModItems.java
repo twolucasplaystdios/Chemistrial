@@ -1,6 +1,5 @@
 package net.twolucasplay.chemistrial.item;
 
-import com.cosmads.chemica.Chemica;
 import com.tterrag.registrate.util.entry.ItemEntry;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
